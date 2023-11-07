@@ -1,0 +1,30 @@
+@media (max-width: 992px) {
+	.navbar {
+		&__burger-btn {
+			display: block;
+			padding: 1em;
+			cursor: pointer;
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 50px;
+			position: absolute;
+			top: 78px;
+			right: 0;
+			width: 100%;
+			height: calc(100vh - 78px);
+			background-color: $black;
+			opacity: 0;
+			transform: translateX(100%);
+			transition: transform 0.5s, opacity 0.5s;
+		}
+
+		&__item {
+			padding: 1em 2em;
+			text-align: center;
+		}
+	}
+}
