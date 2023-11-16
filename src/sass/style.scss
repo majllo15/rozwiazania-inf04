@@ -153,16 +153,20 @@ table {
 		font-size: 2rem;
 		font-family: $bold-font;
 		text-transform: uppercase;
-		color: $grey;
 		background-color: $purple;
+		border: 3px solid transparent;
 		border-radius: 8px;
-		transition: color 0.3s, background-color 0.3s;
+		transition: background 0.3s, border 0.3s;
 		cursor: pointer;
 
 		&:hover {
-			color: $purple;
-			background-color: $grey;
+			background: none;
+			border: 3px solid $purple;
 		}
+	}
+
+	&__solutions-button-link {
+		color: $grey;
 	}
 }
 
