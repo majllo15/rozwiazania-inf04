@@ -83,6 +83,10 @@ table {
 			transform: translateX(0);
 			opacity: 1;
 		}
+
+		.active {
+			color: $purple;
+		}
 	}
 
 	&__burger-btn {
@@ -121,9 +125,7 @@ table {
 }
 
 .header {
-	position: relative;
 	height: calc(100% - 80px);
-	background-color: $black;
 
 	&__text-box {
 		display: flex;
@@ -171,8 +173,6 @@ table {
 }
 
 .technologies {
-	height: calc(100% - 80px);
-	background-color: $black;
 
 	table {
 		margin: auto;
@@ -192,37 +192,42 @@ table {
 }
 
 .sheets {
-	height: calc(100% - 80px);
-	background-color: $black;
 
-	&__list {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		padding-left: 0;
-		list-style: none;
-
-		.text-grey {
-			color: $grey;
-		}
+	&__title {
+		color: $grey;
+		text-align: center;
 	}
 
-	&__element {
-		padding: 1em;
+	.card {
+		margin: auto;
+		width: 32rem;
+		text-align: center;
+		border: none;
 	}
 
 	&__item {
-		padding: 0.2em;
-		font-size: 2.125rem;
-		color: $grey;
 		background-color: $purple;
-		transition: color 0.3s, background-color 0.3s;
+	}
+
+	&__element {
+		font-size: 1.7rem;
+		color: $grey;
 
 		&:hover {
-			color: $purple;
-			background-color: $grey;
+			text-decoration: underline;
 		}
+	}
+}
+
+.solutions {
+
+	&__text {
+		padding-top: 3em;
+		font-size: 5rem;
+		font-family: $bold-font;
+		text-align: center;
+		color: $purple;
+		text-transform: uppercase;
 	}
 }
 
