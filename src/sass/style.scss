@@ -12,7 +12,6 @@ html,
 body {
 	height: 100%;
 	background-color: $black;
-	overflow-x: hidden;
 }
 
 html {
@@ -59,13 +58,17 @@ table {
 	text-align: center;
 }
 
+.fixed-body {
+	overflow: hidden;
+}
+
 .wave {
 	position: absolute;
 	bottom: 0;
 }
 
 .navbar {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 80px;
@@ -173,7 +176,6 @@ table {
 }
 
 .technologies {
-
 	table {
 		margin: auto;
 
@@ -192,7 +194,6 @@ table {
 }
 
 .sheets {
-
 	&__title {
 		color: $grey;
 		text-align: center;
@@ -220,7 +221,6 @@ table {
 }
 
 .solutions {
-
 	&__text {
 		padding-top: 3em;
 		font-size: 5rem;
