@@ -156,6 +156,7 @@ table {
 		margin-top: 2em;
 		padding: 1em 2em;
 		font-size: 2rem;
+		color: $grey;
 		font-family: $bold-font;
 		text-transform: uppercase;
 		background-color: $purple;
@@ -168,10 +169,6 @@ table {
 			background: none;
 			border: 3px solid $purple;
 		}
-	}
-
-	&__solutions-button-link {
-		color: $grey;
 	}
 }
 
