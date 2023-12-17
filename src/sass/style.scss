@@ -67,6 +67,45 @@ table {
 	bottom: 0;
 }
 
+.hide {
+	display: none;
+}
+
+.cookie-box {
+	position: fixed;
+	bottom: 0;
+	padding: 2em;
+	width: 100%;
+	background-color: $lightPurple;
+	z-index: 500;
+
+	.container {
+		display: flex;
+		justify-content: space-evenly;
+		gap: 10px;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		color: $grey;
+	}
+
+	&__cookie-btn {
+		padding: 1em 2em;
+		font-size: 1.4em;
+		color: $grey;
+		background-color: $black;
+		border-radius: 8px;
+		transition: color 0.3s, background-color 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			color: $black;
+			background-color: $grey;
+		}
+	}
+}
+
 .navbar {
 	position: fixed;
 	top: 0;
@@ -135,7 +174,7 @@ table {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		height: 80%;
+		height: 100%;
 		text-align: center;
 	}
 
@@ -159,21 +198,21 @@ table {
 		color: $grey;
 		font-family: $bold-font;
 		text-transform: uppercase;
-		background-color: $purple;
-		border: 3px solid transparent;
+		background: $purple;
+		border: 3px solid;
+		border-color: transparent;
 		border-radius: 8px;
-		transition: background 0.3s, border 0.3s;
+		transition: background 0.3s, border-color 0.3s;
 		cursor: pointer;
 
 		&:hover {
 			background: none;
-			border: 3px solid $purple;
+			border-color: $purple;
 		}
 	}
 }
 
 .technologies {
-
 	&__table-container {
 		padding-top: 5em;
 	}
